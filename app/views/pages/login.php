@@ -11,7 +11,7 @@
     <main>
     <?php echo $data['usuarios'][0]->mail ;?>
         <!--formulario de consulta de disponibilidad-->
-        <form action="<?php echo RUTA_URL; ?>user/create" method="POST" class="container mt-4 p-4 bg-light">
+        <form action="<?php echo RUTA_URL; ?>user/index" method="POST" class="container mt-4 p-4 bg-light">
             <div class="row">
                 <div class="col-md-2">
                     <label for="mail" class="form-label">Correo</label>

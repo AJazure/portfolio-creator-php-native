@@ -5,20 +5,22 @@
     class Inicio extends Controller {
         public function __construct() {
             //echo "Controller INICIO ejecutado."; die();
-            $this->UsuariosModel = $this->loadModel('Usuarios');
+            // $this->UsuariosModel = $this->loadModel('Usuarios');
             
         }
 
         public function index() {
 
-            $usuarios = $this->UsuariosModel->getUsers();
+            // $usuarios = $this->UsuariosModel->getUsers();
 
-            $data = [
-                'tituloPagina' => "bienvenido al login pibe, esto si es cine 🚬",
-                'usuarios' => $usuarios,
-            ];
+            // $data = [
+            //     'tituloPagina' => "bienvenido al login pibe, esto si es cine 🚬",
+            //     'usuarios' => $usuarios,
+            // ];
 
-            $this->loadView('pages/login', $data);
+            // $this->loadView('pages/login', $data);
+            $this->loadView('pages/register');
+
             
         }
 

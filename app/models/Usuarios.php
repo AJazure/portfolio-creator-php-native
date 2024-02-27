@@ -24,9 +24,22 @@
         public function getUser($id_user){
             $this->db->query("SELECT * FROM users
             WHERE id_user = :id_user");
-
-
         }
+
+        public function registrarUsuario($data){
+            $this->db->query("INSERT INTO usuarios (nombre, apellido, mail, password) VALUES (:nombre, :apellido, :mail, :password)");
+            $this->db->bind(':nombre', $data['nombre']);
+            $this->db->bind(':apellido', $data['apellido']);
+            $this->db->bind(':mail', $data['mail']);
+            $this->db->bind(':password', $data['password']);
+            
+            if ($this->db->execute()) {
+                return true;
+            } else {
+                return false;            
+            }
+        }
+        
 
     }
 

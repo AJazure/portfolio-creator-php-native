@@ -18,7 +18,7 @@ define('NOMBRESITIO', 'Hola Mundo Web 🥽');
 define('HOST', 'localhost');
 define('DB', 'sistema-portfolios');
 define('USER', 'root');
-define('PASSWORD', 'admin');
+define('PASSWORD', '');
 define('CHARSET', 'utf8mb4');
 
 ?>
